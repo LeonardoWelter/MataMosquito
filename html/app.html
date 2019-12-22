@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mata moscas - o Jogo</title>
+
+    <!-- Importação do estilo.css -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- Importação dos scripts em JavaScript-->
+    <script src="../js/jogo.js"></script>
+</head>
+<body onresize="ajustaTamanhoJogo()">
+
+<div class="painel">
+    <div class="vidas">
+        <img id="v1" src="../img/coracao_cheio.png">
+        <img id="v2" src="../img/coracao_cheio.png">
+        <img id="v3" src="../img/coracao_cheio.png">
+    </div>
+    <div class="cronometro">
+        Tempo restante: <span id="cronometro"></span>
+    </div>
+</div>
+
+<script>
+    // Define o cronometro antes dos scripts iniciarem para começar no tempo certo
+    document.getElementById('cronometro').innerHTML = tempo;
+
+    // Repetição da criação das moscas para o jogo
+    var jogo = setInterval(function () {
+        randomPosition()
+    }, criaMoscaTempo);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mata Moscas - O jogo.</title>
+
+    <!-- Importação do Bootstrap via CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Importação do estilo.css -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- Importação dos scripts em JavaScript-->
+    <script src="../js/jogo.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center">
+                <img src="../img/game.png">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center">
+                <div class="mb-2">
+                    <select class="form-control" id="nivel">
+                        <option value="">--- Selecione a dificuldade ---</option>
+                        <option value="facil">Fácil</option>
+                        <option value="normal">Normal</option>
+                        <option value="dificil">Díficil</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">
+                    Iniciar Jogo
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
