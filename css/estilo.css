@@ -6,7 +6,7 @@ html {
 /* Define a imagem de fundo da tela de jogo*/
 body {
     background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Define os tamanhos que as moscas podem ter, selecionado via script*/
